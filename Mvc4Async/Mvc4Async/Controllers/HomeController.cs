@@ -25,7 +25,7 @@ namespace Mvc4Async.Controllers
             var gizmoTask = gizmoService.GetGizmosAsync();
 
             await Task.WhenAll(widgetTask, prodTask, gizmoTask);
-
+            //teste
             var pwgVM = new ProdGizWidgetVM(
                widgetTask.Result,
                prodTask.Result,
